@@ -1,0 +1,28 @@
+{
+  "name": "blue-sky",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Small Vite + React + TS single page app with intentionally outdated dependencies, used for vulnerability remediation practice.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "audit": "npm audit"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "lodash": "4.17.4",
+    "moment": "2.19.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.191",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@vitejs/plugin-react": "4.2.0",
+    "typescript": "5.2.2",
+    "vite": "5.0.0"
+  }
+}
