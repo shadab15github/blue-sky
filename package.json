@@ -11,8 +11,8 @@
     "audit": "npm audit"
   },
   "dependencies": {
-    "axios": "0.18.0",
-    "lodash": "4.17.4",
+    "axios": "0.18.1",
+    "lodash": "4.17.23",
     "moment": "2.29.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
