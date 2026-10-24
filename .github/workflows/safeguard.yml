@@ -1,0 +1,18 @@
+name: Safeguard
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Safeguard scan
+        env:
+          SAFEGUARD_API_KEY: ${{ secrets.SAFEGUARD_API_KEY }}
+          SAFEGUARD_INSTALL_DIR: ${{ runner.temp }}/safeguard-bin
+        run: |
+          set -eu
+          curl -fsSL https://cli.safeguard.sh/install | bash
+          "$SAFEGUARD_INSTALL_DIR/safeguard" ci scan --wait --fail-on critical
