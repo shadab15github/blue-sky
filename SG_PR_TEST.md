@@ -1,0 +1,1 @@
+Safeguard PR scan test
